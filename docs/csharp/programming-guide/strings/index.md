@@ -32,7 +32,7 @@ ms.locfileid: "75711904"
   
  [!code-csharp[csProgGuideStrings#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#2)]  
   
- 由于字符串“modification”实际上是一个新创建的字符串，因此，必须在创建对字符串的引用时使用警告。 如果创建了字符串的引用，然后“修改”了原始字符串，则该引用将继续指向原始对象，而非指向修改字符串时所创建的新对象。 以下代码阐释了此行为：  
+ 由于对字符串“修改”实际上是创建一个新的字符串，所以在创建字符串的引用时必须要小心。 如果创建了字符串的引用，然后“修改”了原始字符串，则该引用将继续指向原始对象，而非指向修改字符串时所创建的新对象。 以下代码阐释了此行为：  
   
  [!code-csharp[csProgGuideStrings#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#25)]  
   
@@ -43,7 +43,7 @@ ms.locfileid: "75711904"
   
  [!code-csharp[csProgGuideStrings#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#3)]  
   
- 当字符串文本包含反斜杠字符（例如在文件路径中）时，出于便捷性和更强的可读性的考虑，使用逐字字符串。 由于逐字字符串将新的行字符作为字符串文本的一部分保留，因此可将其用于初始化多行字符串。 使用双引号在逐字字符串内部嵌入引号。 下面的示例演示逐字字符串的一些常见用法：  
+ 当字符串包含反斜杠字符时（例如在文件路径中），出于便捷性和更强的可读性的考虑，使用逐字字符串。 由于逐字字符串将换行符作为字符串文本的一部分保留，因此可将其用于初始化多行字符串。 使用双引号在逐字字符串内部嵌入引号。 下面的示例演示逐字字符串的一些常见用法：  
   
  [!code-csharp[csProgGuideStrings#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#4)]  
   
